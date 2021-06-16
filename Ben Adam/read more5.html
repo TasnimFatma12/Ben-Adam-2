@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>read more5</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+		<style>
+		
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Georgia, "times new roman,Times,serif";
+}
+
+.banner{
+	width: 100%;
+	height: auto;
+	border: 6px solid black;
+}
+
+.home{
+	width: 72%;
+	margin: auto;
+	height: auto;
+	padding-top: 40px;
+}
+.home nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*#heading{
+	padding-left: 145px;
+}*/
+.iconRotate { 
+            position: relative; 
+            font-size: 13px; 
+            color: #000; 
+            width: 59px; 
+            margin: 0 3%; 
+            height: 59px; 
+            font-weight: 700;
+            line-height: 59px; 
+            display: inline-block; 
+            text-align: center; 
+            -webkit-perspective: 50em; 
+            perspective: 50em; 
+            text-decoration: none; 
+    }
+    .iconRotate:after { 
+            position: absolute;  
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            border: 5px solid #000; 
+            content: ''; 
+            z-index: -1; 
+            border-radius: 0%; 
+    } 
+    .iconRotate:before { 
+            color: #fff; 
+    }
+    .iconRotate:before,
+    .iconRotate:after {
+            -webkit-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out;
+    }
+     
+    .iconRotate:hover:after,
+    .iconRotate:active:after,
+    .iconRotate.hover:after {
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    }
+    .icon-rotate-nav h5 { 
+            vertical-align:top;
+    }
+.list li{
+	list-style: none;
+	display: inline-block;
+	padding: 18px;
+}
+.list li a{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 1.25em;
+	color: #000;
+}
+.list li a:hover{
+	border-bottom: 2px solid #ab2537fa;
+}
+.text{
+	text-align: left;
+	padding-top: 80px;
+	padding-left: 130px;
+}
+.text h1{
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 45px;
+	margin-bottom: 80px;
+}
+.text h5{
+	color: #ab2537fa;
+	margin-bottom: 1.5em;
+	font-size: 12.5px;
+	line-height: 10.75px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-top: 20px;
+
+}
+.about{
+	padding-top: 70px;
+	padding-left: 130px;
+}
+.about h4{
+	font-family: sans-serif;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 16.5px;
+	margin-bottom: 20px;
+}
+.about h5{
+	color: #ab2537fa;
+	margin-bottom: 1.5em;
+	font-size: 12.5px;
+	line-height: 10.75px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-top: 20px;
+
+}
+.about h2{
+	font-size: 15px;
+	padding-top: 20px;
+	line-height: 30px;
+	margin-bottom: 18.5px;
+	font-family: Georgia,times new roman,Times,serif;
+    color: #000;
+    font-weight: 400;
+}
+
+.service h5{
+	color: #ab2537fa;
+	margin-bottom: 1em;
+	font-size: 12.5px;
+	line-height: 22.75px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-top: 20px;
+}
+.service h4{
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+.service h2{
+	font-size: 15px;
+	line-height: 30px;
+	margin-bottom: 18.5px;
+	font-family: Georgia,times new roman,Times,serif;
+    color: #000;
+    font-weight: 400;
+}
+.service p{
+	color: #000;
+	text-align: center;
+	font-size: 28.125px;
+	margin-bottom: 14.5px;
+}
+
+.line{
+	margin-top: 40px;
+	border: none;
+	height: 0.5px;
+	background-color: #f0eeee;;
+	width: 100%;
+}
+.foot{
+	text-align: center;
+}
+.foot h2{
+	padding-top: 50px;
+	margin-bottom: 1.5em;
+	font-size: 30px;
+}
+.foot i{
+	padding-left: 9px;
+}
+#i1{
+	padding-right: 9px;
+}
+#btn1{
+	border-radius: 5px;
+    border: 1px solid #ab2537fa;
+    padding: 17px 70px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 1em;
+    margin-bottom: 1.8em;
+    background-color: transparent;
+    min-width: 10em;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+#btn1:hover{
+	transition: all .25s ease;
+	padding: 17px 71px;
+}
+.foot a{
+	text-decoration: none;
+}
+.foot h4{
+	font-size: 1em;
+    line-height: 2em;
+    color: #000;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+#btn1:hover #i1{
+	margin-left: 8.5px;
+	transition: all 0.6s;
+}
+
+
+
+@media(max-width: 1100px){
+	.about{
+		padding-left: 0px;
+	}
+	.home{
+	width: 90%;
+}
+}
+
+
+
+
+
+
+@media (max-width: 700px){
+
+	.logo h5{
+    padding: 11px 13px 13px 11px;
+}
+#br{
+	display: none;
+}
+.home{
+	width: 90%;
+}
+.text{
+	text-align: left;
+}	
+    .about{
+	padding-left: 0px;
+}	
+}
+
+
+@media(max-width: 1100px){
+	.text{
+		padding-left: 0;
+	}
+	#br{
+		display: none;
+	}
+}
+</style>
+</head>
+<body>
+
+	<section class="banner">
+		
+		<div class="home">
+			
+			<nav>
+				<div class="icon-rotate-nav"> 
+					<h5> <a href="index.html" class="iconRotate"> TF</a></h5>
+				</div>
+
+				<div class="list">
+					<li><a href="index.html">Home</a>
+					</li>
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</div>
+			</nav>
+
+			<div class="text">
+				
+				<h5>JULY 13, 2013</h5>
+				<h1>Tips for Meaningful Engagement in the Digital<br id="br"> World</h1>
+				
+			</div>
+
+            <div class="main">
+			<hr class="line">
+		</div>
+
+
+
+			<div class="about">
+			
+				<h4>Smart Phone Manifesto</h4>
+
+				<h5>CREATIVITY IS INTENSIONAL.</h5>
+
+			
+				<h2>I recently got an iphone after spending the last 7 months with a flip phone.</h2>
+
+
+				<h2>I had the conviction that me owning a smart phone was doing more damage to my life, than good. (And at the time this<br id="br"> was probably true). Over the last few months I have been reflecting on this idea a lot, and here are some of my thoughts:</h2>
+
+				
+
+            <div class="service">
+
+            	<h5>SMART PHONE MANIFESTO:</h5>
+				
+		
+				<h2>In a lot of ways, I would compare the technological revolution to the sexual revolution of the 1960’s. When the sexual<br id="br"> revolution happened, there was an excitement about the endless benefits of sexual liberation, but there was a blindness<br id="br"> to its consequences.</h2>
+
+
+
+				<h2>In the same way, today we have uninhibited access to information and entertainment. In a lot of ways we have no idea<br id="br"> what the consequences of this constant distraction.</h2>
+
+
+				<h4>Here are some of the consequences that I see so far:</h4>
+
+				
+				
+
+				<h2>Broken relational dynamic (people on social media while missing real opportunities for interaction) We’ve all<br id="br"> experienced that moment of silence where everyone at the table has their smart phone in front of their face and they are<br id="br"> all simultaneously checking social media. Stifled creativity. So much of our creativity is borne out of the fires of boredom<br id="br"> and angst. When we have constant access to entertainment, we have little time for reflection. This leads to a lack of<br id="br"> creativity and positive contributions to personal growth. Dangerous amounts of personal data given to companies I could<br id="br"> go on but I will stop there But here is the reality: Smart phones are not going to go away. In fact they are going to be the<br id="br"> only option that we have in a few years.</h2>
+
+				<h2>So instead of asking the question should we or should we not use use smartphones/ social media, I think we need to be<br id="br"> asking the question: how can we be using these tools to make our lives better, and the lives of the people around us<br id="br"> better.</h2>
+
+
+
+				<h4>Here are some ideas I came up with:</h4>
+
+				<h5>THINGS I WANT TO DO WITH MY SMART PHONE:</h5>
+
+
+
+				<h2>I want to journal & do daily reflections on the go (light rail) I want to use my smart phone to take pictures I want to use<br id="br"> my smart phone to help me maximize my schedule I want to use my smart phone to Google hangout & iMessage my<br id="br"> family regularly I want to be making contact with each member of my family at least 1x per week I will use my phone to manage projects with Freelancers I will use my phone to<br id="br"> encourage and build community with Guys in my RC I will use<br id="br"> my phone to get directions and not get lost I will portray my life realistically on social media (I don’t want to tell lies with<br id="br"> photos) I will take a technology Sabbath one day a week (no computer, no phone, no TV).</h2>
+
+
+
+				<h4>Things that I will not do with my smart phone:</h4>
+
+
+				<h2>Check social media when hanging out with a group of people Constantly be on my phone Be on my phone in my bedroom<br id="br"> Feel like I am not really experiencing a moment unless I am taking a picture Check my email incessantly (turn off push<br id="br"> notifications for email (and badges) I will not resort to taking out my phone when I am bored (especially with people). I<br id="br"> will not have push notifications and badges that will interrupt me I will not be a slave to my phone I will not look at porn<br id="br"> on my phone I will not consume media mindlessly on my phone I will not text while driving or drive distracted This is<br id="br"> probably just the beginning of the ways that we could use our smartphones better. What are your ideas?</h2>
+
+
+
+			</div>
+			</div>
+		</div>
+
+		<hr class="line">
+
+		<div class="foot">
+
+		<h2>See More Articles</h2>
+		
+		<a href="read more4.html"> <button id="btn1">Next <i class="fa fa-long-arrow-right" id="i1"></i></button>
+
+
+		<hr class="line">
+
+		<h4>Copyright Tasnim Fatma 2021</h4>
+	</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>read more4</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+		<style>
+		
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Georgia, "times new roman,Times,serif";
+}
+
+.banner{
+	width: 100%;
+	height: auto;
+	border: 6px solid black;
+}
+
+.home{
+	width: 72%;
+	margin: auto;
+	height: auto;
+	padding-top: 40px;
+}
+.home nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.iconRotate { 
+            position: relative; 
+            font-size: 13px; 
+            color: #000; 
+            width: 59px; 
+            margin: 0 3%; 
+            height: 59px; 
+            font-weight: 700;
+            line-height: 59px; 
+            display: inline-block; 
+            text-align: center; 
+            -webkit-perspective: 50em; 
+            perspective: 50em; 
+            text-decoration: none; 
+    }
+    .iconRotate:after { 
+            position: absolute;  
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            border: 5px solid #000; 
+            content: ''; 
+            z-index: -1; 
+            border-radius: 0%; 
+    } 
+    .iconRotate:before { 
+            color: #fff; 
+    }
+    .iconRotate:before,
+    .iconRotate:after {
+            -webkit-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out;
+    }
+     
+    .iconRotate:hover:after,
+    .iconRotate:active:after,
+    .iconRotate.hover:after {
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    }
+    .icon-rotate-nav h5 { 
+            vertical-align:top;
+    }
+.list li{
+	list-style: none;
+	display: inline-block;
+	padding: 18px;
+}
+.list li a{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 1.25em;
+	color: #000;
+}
+.list li a:hover{
+	border-bottom: 2px solid #ab2537fa;
+}
+.text{
+	text-align: left;
+	padding-top: 80px;
+	padding-left: 130px;
+}
+.text h1{
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 45px;
+	margin-bottom: 80px;
+}
+.text h5{
+	color: #ab2537fa;
+	margin-bottom: 1.5em;
+	font-size: 12.5px;
+	line-height: 10.75px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-top: 20px;
+
+}
+.about{
+	padding-top: 70px;
+	padding-left: 130px;
+}
+.about h4{
+	font-family: sans-serif;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 16.5px;
+	margin-bottom: 20px;
+}
+.about img{
+	width: 82%;
+	margin-bottom: 50px;
+}
+.about h5{
+	color: #ab2537fa;
+	margin-bottom: 1.5em;
+	font-size: 12.5px;
+	line-height: 10.75px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-top: 20px;
+
+}
+.arrow{
+	display: flex;
+}
+.about h2{
+	font-size: 15px;
+	padding-top: 20px;
+	line-height: 30px;
+	margin-bottom: 22.5px;
+	font-family: Georgia,times new roman,Times,serif;
+    color: #000;
+    font-weight: 400;
+}
+
+.service h5{
+	color: #ab2537fa;
+	margin-bottom: 1.5em;
+	font-size: 12.5px;
+	line-height: 22.75px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-top: 20px;
+}
+.service h4{
+	padding-top: 40px;
+	margin-bottom: 40px;
+}
+.service h2{
+	font-size: 15px;
+	line-height: 30px;
+	margin-bottom: 22.5px;
+	font-family: Georgia,times new roman,Times,serif;
+    color: #000;
+    font-weight: 400;
+}
+.service li{
+	padding-left: 30px;
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 22.5px;
+	padding-bottom: 30px;
+}
+.service p{
+	color: #000;
+	text-align: center;
+	font-size: 28.125px;
+	margin-bottom: 14.5px;
+}
+
+.line{
+	margin-top: 40px;
+	border: none;
+	height: 0.5px;
+	background-color: #f0eeee;;
+	width: 100%;
+}
+.bor{
+	text-align: center;
+}
+.line1{
+	margin-top: 40px;
+	border: none;
+	height: 0.5px;
+	margin-bottom: 30px;
+	background-color: #ab2537fa;
+	width: 10%;
+}
+.foot{
+	text-align: center;
+}
+.foot h2{
+	padding-top: 50px;
+	margin-bottom: 1.5em;
+	font-size: 30px;
+}
+
+#btn:hover{
+	transition: all .25s ease;
+    padding: 17px 49px 17px 45px;
+}
+#i1{
+	padding-left: 9px;
+}
+#i{
+	padding-right: 9px;
+}
+#btn{
+	border-radius: 5px;
+	border: 1px solid #ab2537fa;
+    padding: 17px 48px 17px 42px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 1em;
+    margin-bottom: 1.8em;
+    background-color: transparent;
+    min-width: 9em;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+#btn1{
+	border-radius: 5px;
+    border: 1px solid #ab2537fa;
+    padding: 17px 66px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 1em;
+    margin-bottom: 1.8em;
+    background-color: transparent;
+    min-width: 10em;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+#btn1:hover{
+	transition: all .25s ease;
+	padding: 17px 67px;
+}
+.foot h4{
+	font-size: 1em;
+    line-height: 2em;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+#btn1:hover #i1{
+	margin-left: 8.5px;
+	transition: all 0.6s;
+}
+
+#btn:hover #i{
+	margin-right: 8.5px;
+	transition: all 0.6s;
+}
+
+
+
+
+@media(max-width: 1100px){
+	.about{
+		padding-left: 0px;
+	}
+	.text{
+		padding-left: 0;
+	}
+	.home{
+	width: 90%;
+}
+#br{
+	display: none;
+}
+.about img{
+	width: 100%;
+}
+}
+
+
+
+
+@media (max-width: 700px){
+	.logo h5{
+    padding: 11px 13px 13px 11px;
+}
+.about img{
+	width: 100%;
+}
+#br{
+	display: none;
+}
+.home{
+	width: 90%;
+}
+.text{
+	text-align: left;
+}	
+    .about{
+	padding-left: 0px;
+}	
+}
+
+
+
+</style>
+</head>
+<body>
+
+	<section class="banner">
+		
+		<div class="home">
+			
+			<nav>
+				<div class="icon-rotate-nav"> 
+					<h5> <a href="index.html" class="iconRotate"> TF</a></h5>
+				</div>
+
+				<div class="list">
+					<li><a href="index.html">Home</a>
+					</li>
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</div>
+			</nav>
+
+			<div class="text">
+				
+				<h5>OCT. 11, 2013</h5>
+				<h1>Lebron James & Creativity: A Guide to Creativity<br id="br"> for the Left Brained</h1>
+				
+			</div>
+
+            <div class="main">
+			<hr class="line">
+		</div>
+
+
+
+			<div class="about">
+
+				<img src="flag.jpeg">
+			
+				<h4>Redefining Creativity</h4>
+
+			
+				<h2>If I were to take a poll, I am guessing that most people would not consider themselves to be a creative person (and<br id="br">  undoubtedly some of you “creatives” are not nearly as creative as you think you are). So I want to start a new<br id="br">  conversation about creativity and that begins with a new definition of creativity. Here is how I define it:</h2>
+
+				
+
+            <div class="service">
+				
+		
+				<h2>Creativity is simply making something without following instructions. That’s simple enough right? Just make something,<br id="br">  but you can’t look up how to do it. For many of you “left-brained” people this is absolutely terrifying. “What if I mess<br id="br">  up?” “What if I am not doing this right?”</h2>
+
+
+
+				<h2>Well since I am a left-brained, person who has really struggled with considering myself to be creative:here are some<br id="br">  practical tips for growing in your creative abilities (yes it’s a list).</h2>
+
+				<h5>CREATIVITY IS INTENSIONAL.</h5>
+				
+
+				<h2>So you have decided that you want to be creative, so now what? Well, the first step in growing in your ability to think<br id="br">  creatively is to just do it. And usually we don’t do these things (even if we desire to do them) unless we set aside time to<br id="br">  pursue them.</h2>
+
+				<h2>There is a myth that a lot of people buy into that creative people are simply more inspired than others. There is a phrase<br id="br">  that I have found to be very true.</h2>
+
+				<h2>Ideas are like sex, but executing them is like raising the baby. Everyone has ideas. You have to start thinking of creativity<br id="br">  as something that is bigger than art (although art is highly creative).  Creativity is expressed in cooking, in planning a<br id="br">  date, in financing a business. But a lot of times, to see our ideas come to reality, it takes a lot of work. And for me, that<br id="br">  doesn’t happen unless I set aside time to do it.</h2>
+
+				<h5>FEED YOURSELF CREATIVELY.</h5>
+				
+
+				<h2>Growing in creativity is like working out. Talk to any crossfit bro about what they eat and chances are they are pretty<br id="br">  intense with their (paleo) diet. Your brain is a muscle and it needs good food in order to get quality output.</h2>
+
+				<h2>The first way to feed your brain is to stop eating junk food. Television and Netflix are amazing, and if I am being honest I<br id="br">  am a binger too (Legend of Korra #allday). But these are purely consumptive forms of entertainment. Reading on the<br id="br">  other hand (especially fiction), forces your brain to think creatively because you have to imagine what the characters look<br id="br">  like, and you have to think about and process information on a deeper level.</h2>
+
+				<h2>Secondarily, I think that exposing your self to things that are outside of what you normally do, listen to, or read, allows<br id="br">  your brain to form new connections that it would not have been able to make before. This is so important to the creative<br id="br">  process, because nothing is made from scratch.</h2>
+				
+                <div class="bor">
+               	<hr class="line1">
+               </div>
+
+
+              <p>Creativity always involves making combinations of<br id="br">  preexisting elements that create something new.</p>
+      
+                <div class="bor">
+               	<hr class="line1">
+               </div>
+              
+                <h5>CREATIVITY HAS TO BE CONSISTENT</h5>
+				
+
+				<h2>The final tip I would give you is to be consistent. There are several things that kill consistency, and the foremost is<br id="br"> comparison. There is a story that has always resonated with me.</h2>
+
+				<h2>A school teacher decided to do a simple experiment with his two pottery classes. They were beginners, and so with the<br id="br">  first class, he gave them the task of creating one pot which was due at the end of the semester. This pot would be graded<br id="br">  on its quality in shape and design, as well as the technique used to craft it. To the second class, he gave the task of<br id="br">  completing one pot each day. If they were able complete a pot each day, they would receive an A in the class.</h2>
+
+				<h2>At the end of the semester, there was no comparison between the two classes. The students who had to make a pot every<br id="br">  day produced pottery that was significantly more creative and had better craftsmanship then their counterparts who only <br id="br"> produced one pot. The students in the first class obsessed over theory and technique instead of getting their hands dirty.<br id="br">  They overthought the process.</h2>
+
+
+				<h2>In so many ways, this is true for all creative endeavors. Consistency outweigh the significant leaps demanded by<br id="br">  perfection.</h2>
+
+
+
+				<h2>Secondarily, I think that exposing your self to things that are outside of what you normally do, listen to,<br id="br">  or read, allows your brain to form new connections that it would not have been able to<br id="br">  make before. This is so important to the creative process, because nothing is made from scratch.</h2>
+
+
+
+				<h2>Sometimes ‘done’ is better than ‘perfect’. If you consistent in pursuing growth in whatever skill set you are choosing to<br id="br"> express your creativity (cooking, drawing, gardening etc) I believe that you will be amazed at what you are able to<br id="br"> accomplish over time.</h2>
+
+
+
+				<h2>Walking on Water—Madeleine Le’Engle</h2>
+
+
+
+				<h2>Tipping Point—Malcolm Gladwell</h2>
+				
+
+			</div>
+			</div>
+		</div>
+
+		<hr class="line">
+
+		<div class="foot">
+
+		<h2>See More Articles</h2>
+		<a href="read more5.html">  <button id="btn"><i class="fa fa-long-arrow-left" id="i"></i> Previous</button></a>
+		<a href="read more3.html"> <button id="btn1">Next <i class="fa fa-long-arrow-right" id="i1"></i></button></a>
+
+
+		<hr class="line">
+
+		<h4>Copyright Tasnim Fatma 2021</h4>
+	</div>
+	</section>
+
+</body>
+</html>

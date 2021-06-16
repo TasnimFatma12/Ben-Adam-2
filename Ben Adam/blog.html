@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Blog</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+		<style>
+		
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Georgia, "times new roman,Times,serif";
+}
+
+.banner{
+	width: 100%;
+	height: auto;
+	border: 6px solid black;
+}
+
+.home{
+	width: 72%;
+	margin: auto;
+	height: auto;
+	padding-top: 40px;
+}
+.home nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.iconRotate { 
+            position: relative; 
+            font-size: 13px; 
+            color: #000; 
+            width: 59px; 
+            margin: 0 3%; 
+            height: 59px; 
+            font-weight: 700;
+            line-height: 59px; 
+            display: inline-block; 
+            text-align: center; 
+            -webkit-perspective: 50em; 
+            perspective: 50em; 
+            text-decoration: none; 
+    }
+    .iconRotate:after { 
+            position: absolute;  
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            border: 5px solid #000; 
+            content: ''; 
+            z-index: -1; 
+            border-radius: 0%; 
+    } 
+    .iconRotate:before { 
+            color: #fff; 
+    }
+    .iconRotate:before,
+    .iconRotate:after {
+            -webkit-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out;
+    }
+     
+    .iconRotate:hover:after,
+    .iconRotate:active:after,
+    .iconRotate.hover:after {
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    }
+    .icon-rotate-nav h5 { 
+            vertical-align:top;
+    }
+.list li{
+	list-style: none;
+	display: inline-block;
+	padding: 18px;
+}
+.list li a{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 1.25em;
+	color: #000;
+}
+.list li a:hover{
+	border-bottom: 2px solid #ab2537fa;
+}
+.text{
+	text-align: left;
+	padding-top: 80px;
+	padding-left: 130px;
+}
+.text h1{
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 45px;
+}
+.about a{
+	text-decoration: none;
+	color: #000;
+}
+.about{
+	padding-top: 70px;
+	padding-left: 130px;
+}
+
+.about h4{
+	font-family: sans-serif;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 16.5px;
+	margin-bottom: 20px;
+}
+.about img{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.about h5{
+	color: #ab2537fa;
+	margin-bottom: 1.5em;
+	font-size: 12.5px;
+	line-height: 18.75px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-top: 30px;
+
+}
+.arrow{
+	display: flex;
+}
+.about  h3{
+	font-size: 15px;
+	padding-top: 30px;
+	cursor: pointer;
+	padding-right: 10px;
+	transition: all 0.4s;
+	color: black;
+	text-decoration: none;
+}
+.about i{
+	padding-left: 0px;
+	padding-top: 31.5px;
+	cursor: pointer;
+}
+.about h3:hover{
+	margin-right: 5px;
+	
+}
+.about  h2 a{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 22.5px;
+	line-height: 33.75px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+}
+
+.service h5{
+	color: #ab2537fa;
+	margin-bottom: 1.5em;
+	font-size: 12.5px;
+	line-height: 18.75px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-top: 30px;
+}
+.service h2 a{
+	color: #000;
+	font-size: 22.5px;
+	line-height: 33.75px;
+	cursor: pointer;
+}
+.service h3 a{
+	font-size: 15px;
+	padding-top: 30px;
+	cursor: pointer;
+	transition: all 0.5s;
+	color: #000;
+}
+.service i{
+	display: flex;
+	padding-left: 0px;
+	cursor: pointer;
+}
+.service h3:hover{
+	margin-right: 5px;
+	
+}
+
+.line{
+	margin-top: 40px;
+	border: none;
+	height: 0.5px;
+	background-color: #f0eeee;;
+	width: 100%;
+}
+
+.foot{
+	text-align: center;
+}
+.foot h2{
+	padding-top: 70px;
+	margin-bottom: 1.5em;
+	font-size: 30px;
+}
+#i{
+	padding-left: 9px; 
+}
+
+#button{
+	border-radius: 5px;
+    border: 1px solid #ab2537fa;
+    padding: 16px 50px;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 1em;
+    margin-bottom: 1.8em;
+    background-color: transparent;
+    min-width: 10em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#button:hover{
+	border: 1px solid #AD293B;
+	padding: 16px 50px;
+	min-width: 5em;
+}
+#button:hover #i{
+	margin-left: 8.5px;
+	transition: all 0.6s;
+}
+.foot h4{
+	font-size: 1em;
+    line-height: 2em;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+
+
+@media(max-width: 1100px){
+	.about{
+		padding-left: 0px;
+	}
+	.home{
+	width: 90%;
+}
+#br{
+	display: none;
+}
+.text{
+	padding-left: 0;
+}
+}
+
+
+
+
+@media (max-width: 700px){
+	.logo h5{
+    padding: 11px 13px 13px 11px;
+}
+#br{
+	display: none;
+}
+.home{
+	width: 90%;
+}
+.text{
+	text-align: left;
+}	
+    .about{
+	padding-left: 0px;
+}	
+}
+</style>
+</head>
+<body>
+
+	<section class="banner">
+		
+		<div class="home">
+			
+			<nav>
+				<div class="icon-rotate-nav"> 
+					<h5> <a href="index.html" class="iconRotate"> TF</a></h5>
+				</div>
+
+				<div class="list">
+					<li><a href="index.html">Home</a>
+					</li>
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="">Blog</a></li>
+				</div>
+			</nav>
+
+			<div class="text">
+				<h1>The Blog: Thoughts on life, work and everything in<br id="br"> between.</h1>
+			</div>
+
+            <div class="main">
+			<hr class="line">
+		</div>
+
+
+
+
+
+
+
+
+
+			<div class="about">
+				<h4>Latest Blog Posts:</h4>
+
+			
+				<h5>JUNE 15, 2016</h5>
+			    <h2> <a href="read more1.html">Static Site Generator Talk Links</a></h2>
+				<div class="arrow">
+                <h3> <a href="read more1.html"> Read More </a></h3>
+                <i class="fa fa-long-arrow-right"></i>
+            </div>
+
+
+                <hr class="line">
+				
+
+            <div class="service">
+				
+				<h5>MAY 23, 2015</h5> 
+				<h2> <a href="read more2.html"> Hiring a UX Designer</a></h2>
+				<div class="arrow">
+				 <h3> <a href="read more2.html"> Read More </a></h3>
+                <i class="fa fa-long-arrow-right"></i>
+            </div>
+
+                <hr class="line">
+
+				<h5>NOV. 25, 2013</h5> 
+				<h2> <a href="read more3.html">Great to Good: Struggling to Believe Greatness is Worth It</a></h2>
+				<div class="arrow">
+				 <h3> <a href="read more3.html">Read More</a></h3>
+                <i class="fa fa-long-arrow-right"></i>
+            </div>
+
+                <hr class="line">
+
+
+
+                <h5>OCT. 11, 2013</h5>
+                 <h2> <a href="read more4.html">Lebron James & Creativity: A Guide to Creativity for the Left Brained</a></h2></a>
+				 <div class="arrow">
+                <h3> <a href="read more4.html">Read More</a></h3>
+                <i class="fa fa-long-arrow-right"></i>
+            </div>
+
+                <hr class="line">
+
+
+
+                <h5>JULY 13, 2013</h5>
+				<h2> <a href="read more5.html">Smartphone Manifesto: Meaningful Engagement in the Digital World</a></h2>
+				<div class="arrow">
+				 <h3> <a href="read more5.html">Read More </a></h3>
+                <i class="fa fa-long-arrow-right"></i>
+            </div>
+
+
+				
+
+				
+
+			</div>
+			</div>
+		</div>
+
+		<hr class="line">
+
+		<div class="foot">
+
+		<h2>Interested in doing a project together?</h2>
+		<a href="mailto:tasnimfatna97@gmail.com"> <button id="button">Email Me <i class="fa fa-long-arrow-right" id="i"></i></button></a>
+
+		<hr class="line">
+
+		<h4>Copyright Tasnim Fatma 2021</h4>
+	</div>
+	</section>
+
+</body>
+</html>

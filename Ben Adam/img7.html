@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>img7</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+		<style>
+		
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Georgia, "times new roman,Times,serif";
+}
+
+.banner{
+	width: 100%;
+	height: auto;
+	border: 6px solid black;
+}
+
+.home{
+	width: 72%;
+	margin: auto;
+	height: auto;
+	padding-top: 40px;
+}
+.home nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.iconRotate { 
+            position: relative; 
+            font-size: 13px; 
+            color: #000; 
+            width: 59px; 
+            margin: 0 3%; 
+            height: 59px; 
+            font-weight: 700;
+            line-height: 59px; 
+            display: inline-block; 
+            text-align: center; 
+            -webkit-perspective: 50em; 
+            perspective: 50em; 
+            text-decoration: none; 
+    }
+    .iconRotate:after { 
+            position: absolute;  
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            border: 5px solid #000; 
+            content: ''; 
+            z-index: -1; 
+            border-radius: 0%; 
+    } 
+    .iconRotate:before { 
+            color: #fff; 
+    }
+    .iconRotate:before,
+    .iconRotate:after {
+            -webkit-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out;
+    }
+     
+    .iconRotate:hover:after,
+    .iconRotate:active:after,
+    .iconRotate.hover:after {
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    }
+    .icon-rotate-nav h5 { 
+            vertical-align:top;
+    }
+.list li{
+	list-style: none;
+	display: inline-block;
+	padding: 18px;
+}
+.list li a{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 1.25em;
+	color: #000;
+}
+.list li a:hover{
+	border-bottom: 2px solid #ab2537fa;
+}
+.text{
+	text-align: left;
+	padding-left: 145px;
+	padding-top: 80px;
+}
+.text h1{
+	font-weight: 700;
+	font-size: 30px;
+	padding-top: 35px;
+	line-height: 45px;
+}
+.text h5{
+	color: #ab2537fa;
+	margin-bottom: 70px;
+	font-weight: 700;
+	font-size: 12.5px;
+	line-height: 22.75px;
+	padding-top: 26px;
+	font-family: Arial,Helvetica,sans-serif;
+}
+.about{
+	padding-top: 70px;
+	padding-left: 145px;
+}
+.about h4{
+	font-family: sans-serif;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 16.5px;
+	margin-bottom: 30px;
+}
+ #day{
+	width: 100%;
+	margin-bottom: 40px;
+	padding-top: 10px;
+}
+.about h5{
+	color: #000;
+	margin-bottom: 1.5em;
+	font-size: 15px;
+	line-height: 30px;
+	padding-top: 30px;
+	font-weight: 400;
+}
+.about h5 span{
+	color: #ab2537fa;
+	font-weight: 700;
+}
+.about h2{
+	font-size: 15px;
+	line-height: 30px;
+	cursor: pointer;
+	color: #000;
+	font-weight: 400;
+}
+
+
+.line{
+	margin-top: 40px;
+	border: none;
+	height: 0.5px;
+	background-color: #f0eeee;;
+	width: 100%;
+}
+
+.foot{
+	text-align: center;
+}
+#i1{
+	padding-left: 9px;
+}
+#btn1{
+	border-radius: 5px;
+    border: 1px solid #ab2537fa;
+    padding: 17px 67px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 1em;
+    margin-bottom: 1.8em;
+    background-color: transparent;
+    min-width: 10em;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+#btn1:hover{
+	transition: all .25s ease;
+	padding: 17px 71px;
+}
+#btn:hover{
+	transition: all .25s ease;
+    padding: 17px 49px 17px 45px;
+}
+#i{
+	padding-right: 9px;
+}
+
+#btn1:hover #i1{
+	margin-left: 8.5px;
+	transition: all 0.6s;
+}
+
+#btn:hover #i{
+	margin-right: 8.5px;
+	transition: all 0.6s;
+}
+.foot h2{
+	padding-top: 70px;
+	margin-bottom: 1.5em;
+	font-size: 30px;
+}
+.foot h4{
+	font-size: 1em;
+    line-height: 2em;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+
+#btn{
+	border-radius: 5px;
+	border: 1px solid #ab2537fa;
+    padding: 17px 48px 17px 42px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 1em;
+    margin-bottom: 1.8em;
+    background-color: transparent;
+    min-width: 9em;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+
+
+
+
+@media(max-width: 1100px){
+	#br{
+		display: none;
+	}
+	.text{
+		padding-left: 0px;
+	}
+	.about{
+		padding-left: 0px;
+	}
+	.home{
+		width: 90%;
+	}
+}
+
+
+
+
+
+
+@media (max-width: 700px){
+	.logo h5{
+    padding: 11px 13px 13px 11px;
+}
+#br{
+	display: none;
+}
+.home{
+	width: 90%;
+}
+.text{
+	text-align: left;
+}	
+    .about{
+	padding-left: 0px;
+}	
+}
+</style>
+</head>
+<body>
+
+	<section class="banner">
+		
+		<div class="home">
+			
+			<nav>
+				<div class="icon-rotate-nav"> 
+					<h5> <a href="index.html" class="iconRotate"> TF</a></h5>
+				</div>
+
+				<div class="list">
+					<li><a href="index.html">Home</a>
+					</li>
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</div>
+			</nav>
+
+			<div class="text">
+				<h1>Bubba's Bash: A simple landing page promoting<br id="br"> Bubba Watson's charity concert</h1>
+				<h5>DESIGN / FRONT END DEVELOPMENT</h5>
+			</div>
+
+            <div class="main">
+			<hr class="line">
+		</div>
+
+
+
+			<div class="about">
+				<h4>Project Background</h4>
+
+				<h5>Bubba's Bash is an annual benefit concert for the Bubba Watson Foundation. I created a responsive site in<br id="br"> order to aid in their marketing efforts. The key objectives were to create 3 location specific pages that would allow users to quickly get<br id="br"> information about the artists, and find links to purchase tickets and get directions to the event.</h5>
+
+
+
+		        <h5>For this project I used Sketch for the wires / design and a build tool called Docpad that uses a combination of sass (which<br id="br"> compiles to css), html and javascript to generate the static pages. Using simple static pages allowed for fast load times<br id="br"> and it was easy to iterate the (responsive) design in browser.<span><u> Visit the site here.</u></span></h5>
+
+
+
+
+		    	<h4>Static Comps</h4>
+		        
+            </div>
+            <img src="bubbas_bash.jpg" id="day">
+
+            <img src="bubbas_fullcomp.jpg" id="day">
+
+
+			</div>
+
+			
+
+
+
+
+
+
+
+		<hr class="line">
+
+		<div class="foot">
+
+		<h2>See More Projects</h2>
+		<a href="img8.html"> <button id="btn"><i class="fa fa-long-arrow-left" id="i"></i> Previous</button></a>
+		<a href="img6.html"> <button id="btn1">Next <i class="fa fa-long-arrow-right" id="i1"></i></button></a>
+
+		<hr class="line">
+
+		<h4>Copyright Tasnim Fatma 2021</h4>
+	</div>
+	</section>
+
+</body>
+</html>
